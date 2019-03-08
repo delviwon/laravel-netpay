@@ -84,7 +84,7 @@ class Netpay
             throw new InternalException('代付请求失败');
         }
 
-        return $code;
+        return $result['stat'] ?? false;
     }
 
     /**
@@ -122,7 +122,7 @@ class Netpay
             throw new InternalException('代付订单查询失败');
         }
 
-        return $code;
+        return $result[14] ?? false;
     }
 
     /**
