@@ -51,7 +51,7 @@ class Netpay
             'openBank' => $data['bank_name'],
             'prov' => $data['province'],
             'city' => $data['city'],
-            'transAmt' => $data['amount'],
+            'transAmt' => $data['amount'] * 100,
             'purpose' => $data['purpose'],
             'flag' => '00',
             'version' => '20160530',
