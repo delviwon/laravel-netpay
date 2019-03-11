@@ -16,7 +16,7 @@ class Netpay
      */
     public function __construct()
     {
-        require __DIR__ . '/netpayclient7.php';
+        require_once __DIR__ . '/netpayclient7.php';
     }
 
     /**
